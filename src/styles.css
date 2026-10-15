@@ -1,0 +1,379 @@
+:root {
+  font-family: Inter, 'Segoe UI', sans-serif;
+  color: #202d2a;
+  background: #f6f5f0;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+button {
+  font: inherit;
+}
+button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+:focus-visible {
+  outline: 3px solid #247464;
+  outline-offset: 5px;
+}
+main:focus {
+  outline: none;
+}
+.page-shell {
+  width: min(1180px, calc(100% - 80px));
+  margin: 0 auto;
+}
+.skip-link {
+  position: absolute;
+  left: 16px;
+  top: -80px;
+  background: #fff;
+  padding: 12px 20px;
+  z-index: 10;
+}
+.skip-link:focus {
+  top: 12px;
+}
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 28px;
+  min-height: 104px;
+  border-bottom: 1px solid #d9ded7;
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  font-weight: 650;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  background: #234e42;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 21px;
+  letter-spacing: -1px;
+}
+nav {
+  display: flex;
+  gap: 28px;
+  font-size: 13px;
+  font-weight: 600;
+}
+nav a {
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+.hero {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  align-items: center;
+  gap: 70px;
+  padding: 80px 0 70px;
+}
+.eyebrow {
+  margin: 0 0 16px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #426558;
+}
+h1 {
+  margin: 0 0 24px;
+  font-size: clamp(38px, 4.7vw, 58px);
+  line-height: 1.12;
+  letter-spacing: -2.5px;
+  font-weight: 600;
+}
+.hero-description {
+  max-width: 490px;
+  margin: 0;
+  color: #58645c;
+  font-size: 16px;
+}
+.foundation-note {
+  padding: 28px;
+  background: #e8ede4;
+  border: 1px solid #dce3d5;
+  border-radius: 14px;
+}
+.foundation-badge {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 4px 10px;
+  border: 1px solid #a8bda4;
+  border-radius: 100px;
+  color: #294f37;
+  font-size: 11px;
+  font-weight: 700;
+}
+.foundation-note h2 {
+  margin: 0 0 12px;
+  font-size: 22px;
+  line-height: 1.35;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+.foundation-note p {
+  margin: 0;
+  font-size: 13px;
+  color: #526048;
+}
+.section-intro {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+.section-intro h2 {
+  margin: 0;
+  font-size: 19px;
+  letter-spacing: -0.5px;
+  font-weight: 600;
+}
+.section-intro p {
+  margin: 0;
+  font-size: 12px;
+  color: #627064;
+}
+.workflow-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.workflow-card {
+  display: flex;
+  flex-direction: column;
+  padding: 26px;
+  background: #fffefa;
+  border: 1px solid #dcdfd5;
+  border-radius: 12px;
+  scroll-margin-top: 24px;
+}
+.card-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.step-number {
+  color: #81907e;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+.planned-label {
+  padding: 3px 9px;
+  border-radius: 100px;
+  background: #f0f0e8;
+  color: #59614f;
+  font-size: 10px;
+  font-weight: 600;
+}
+.workflow-card h2 {
+  margin: 0 0 12px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+.workflow-card p {
+  margin: 0;
+  font-size: 13px;
+  color: #62705e;
+}
+.workflow-card ul {
+  margin: 22px 0 26px;
+  padding-left: 17px;
+  color: #44513f;
+  font-size: 12px;
+}
+.workflow-card li + li {
+  margin-top: 8px;
+}
+.workflow-card .card-note {
+  border-top: 1px solid #e9eae3;
+  padding-top: 18px;
+  margin-top: auto;
+  font-size: 11px;
+  color: #6b735e;
+}
+.connection-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 28px;
+  margin: 28px 0 56px;
+  padding: 24px 28px;
+  border: 1px solid #d9ded7;
+  border-radius: 12px;
+}
+.connection-panel .eyebrow {
+  margin-bottom: 7px;
+  font-size: 10px;
+}
+.connection-message {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+}
+.status-dot {
+  display: inline-block;
+  flex-shrink: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #8c9386;
+}
+.status-dot--online {
+  background: #217b55;
+}
+.status-dot--offline {
+  background: #a76831;
+}
+.status-dot--checking {
+  background: #5882aa;
+}
+.supporting-text {
+  margin: 4px 0 0;
+  font-size: 11px;
+  color: #64705d;
+}
+.secondary-button {
+  flex-shrink: 0;
+  padding: 10px 17px;
+  border: 1px solid #afbaaa;
+  border-radius: 7px;
+  background: #fffefa;
+  color: #304f3d;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+}
+.secondary-button:hover:not(:disabled) {
+  background: #e8ede4;
+}
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 24px 0 32px;
+  border-top: 1px solid #d9ded7;
+  color: #6c7665;
+  font-size: 10px;
+}
+.site-footer strong {
+  color: #4a5d45;
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .page-shell {
+    width: calc(100% - 48px);
+  }
+  .site-header {
+    flex-wrap: wrap;
+    gap: 18px;
+    padding: 20px 0;
+  }
+  nav {
+    gap: 20px;
+  }
+  .hero {
+    gap: 32px;
+    padding: 50px 0;
+  }
+  .foundation-note {
+    padding: 22px;
+  }
+  .section-intro {
+    display: block;
+  }
+  .section-intro p {
+    margin-top: 6px;
+  }
+  .workflow-grid {
+    gap: 12px;
+  }
+  .workflow-card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 660px) {
+  .page-shell {
+    width: calc(100% - 36px);
+  }
+  .site-header {
+    align-items: flex-start;
+  }
+  nav {
+    gap: 18px;
+    font-size: 11px;
+    flex-wrap: wrap;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 40px 0;
+  }
+  h1 {
+    letter-spacing: -1.5px;
+  }
+  .hero-description {
+    font-size: 14px;
+  }
+  .foundation-note h2 {
+    font-size: 19px;
+  }
+  .workflow-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .card-heading {
+    margin-bottom: 20px;
+  }
+  .connection-panel {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 18px;
+    padding: 22px;
+    margin-bottom: 38px;
+  }
+  .site-footer {
+    flex-direction: column;
+    gap: 6px;
+  }
+}

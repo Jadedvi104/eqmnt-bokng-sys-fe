@@ -1,0 +1,7 @@
+node_modules
+dist
+coverage
+package-lock.json
+playwright-report
+test-results
+PROJECT_1_EQUIPMENT_BOOKING_SYSTEM.md
